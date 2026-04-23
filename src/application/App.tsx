@@ -39,7 +39,7 @@ const App = () => {
       setCity(value)
     }
 
-    if(newState == '') {
+    if(newState === '') {
       setFilteredLocs(locations)
 
       return
@@ -72,7 +72,7 @@ const App = () => {
           </div>
           <div className='flex flex-col w-1/2'>
             <label htmlFor='state' className='lg:text-lg text-base font-semibold pb-1'> CIDADE </label>
-            <input value={city} onInput={(e) => filterLocs(e)} id='city' placeholder='cidade' className='w-full px-3 py-1 flex justify-center items-center italic font-light bg-transparent border-2 border-textBlue rounded-lg text-textBlue placeholder:text-textBlue disabled:bg-gray-200' disabled={stateEl == '' ? true : false} />
+            <input value={city} onInput={(e) => filterLocs(e)} id='city' placeholder='cidade' className='w-full px-3 py-1 flex justify-center items-center italic font-light bg-transparent border-2 border-textBlue rounded-lg text-textBlue placeholder:text-textBlue disabled:bg-gray-200' disabled={stateEl === '' ? true : false} />
           </div>
         </form>
         <div id='locations' className='lg:pt-10 pt-5 flex flex-col lg:gap-5 gap-4'>
@@ -84,7 +84,7 @@ const App = () => {
                   <h3 className='lg:text-lg text-base font-semibold pb-1'> { location.name } </h3>
                   <h4 className='text-base font-light italic'> { location.city } - { location.state } </h4>
                 </div>
-                <a target='_blank' href={ location.map }>
+                <a rel="noreferrer" target='_blank' href={ location.map }>
                   <img src={ map } alt='Icone de planta' className='top-0 right-1 absolute' />
                 </a>
               </div>

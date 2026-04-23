@@ -17,7 +17,7 @@ const Pagination: React.FC<myProps> = ({ totalLocations, perPage, setCurrentPage
             <div className="flex gap-2 mx-auto">
                 {pages.map((page, index) => {
                     return (
-                        <button key={index} onClick={() => setCurrentPage(page)} className={page == currentPage ? 'rounded-full w-8 h-8 border border-textBlue bg-textBlue text-white flex justify-center items-center' : 'rounded-full w-8 h-8 border border-textBlue text-textBlue flex justify-center items-center'}>
+                        <button key={index} onClick={() => setCurrentPage(page)} className={page === currentPage ? 'rounded-full w-8 h-8 border border-textBlue bg-textBlue text-white flex justify-center items-center' : 'rounded-full w-8 h-8 border border-textBlue text-textBlue flex justify-center items-center'}>
                             {page} 
                         </button>
                     )
