@@ -44,8 +44,6 @@ const App = () => {
 
       return
     }
-
-    console.log(locations.filter((location) => location.state.toLowerCase().includes('rio de janeiro')))
     
     const filtered = locations.filter((location) => {
       const matchState = location.state.toLowerCase().includes(newState.toLowerCase())
