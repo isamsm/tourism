@@ -85,7 +85,7 @@ const App = () => {
                   <h4 className='text-base font-light italic'> { location.city } - { location.state } </h4>
                 </div>
                 <a rel="noreferrer" target='_blank' href={ location.map }>
-                  <img src={ map } alt='Icone de planta' className='top-0 right-1 absolute' />
+                  <img src={ map } alt='Icone de planta' className='top-0 right-1 absolute swing' />
                 </a>
               </div>
             ))
